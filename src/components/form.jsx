@@ -35,7 +35,7 @@ const isValidIdusuario = Number(idusuario)
     }else {
         setIsErrorid(true);
         setIsErroridusuario(true);
-        console.log("Ambos ids debeb ser numéricos");
+        console.log("Ambos ids deben ser numéricos");
     }
     // Reseteo el valor de los input
     setId();
