@@ -24,18 +24,18 @@ const isValidIdusuario = Number(idusuario)
         alert (`id: ${id} - idusuario: ${idusuario}`);
         let respuesta = {id, idusuario}
         console.log(respuesta)
-    }else if (isValidId) {
-        setIsErrorValues(true);
+    }else if (isValidId == NaN) {
+        setIsErrorValues(false);
+        setIsErroridusuario(true);
         console.log("El id del usuario debe ser numérico");
-        console.log(isValidIdusuario)
-    }else if (isValidIdusuario){
+    }else if (isValidIdusuario== NaN){
+        setIsErrorid(true);
         setIsErroridusuario(false);
         console.log("El id del ticket debe ser numérico");
     }else {
         setIsErrorid(true);
         setIsErroridusuario(true);
         console.log("Ambos ids debeb ser numéricos");
-        console.log(isValidIdusuario)
     }
     // Reseteo el valor de los input
     setId();
