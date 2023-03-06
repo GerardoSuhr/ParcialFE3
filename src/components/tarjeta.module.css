@@ -1,0 +1,21 @@
+
+.padre{
+display:flex;
+border: 2px solid black;
+margin: 10px;
+width: 100%;
+justify-content: space-between;
+align-items: center;
+}
+
+.tarjeta1 {
+border: 2px solid red;
+margin: 10px;
+width: 40%
+}
+
+.tarjeta2 {
+border: 2px solid blue;
+margin: 10px;
+width: 40%
+}
